@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="OIP123-removebg-preview.png">
+    <title>Pdf To Word</title>
+
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="l-cont">
+            <div>
+                <img src="undraw_Upload_re_pasx-removebg-preview.png" alt="" class="pasx-img">
+                <h1 class="lc-head">Convert Pdf file to <br> Word file</h1>
+            </div>
+        </div>
+        <div class="r-cont">
+            <div class="upload">
+                <div class="select-file">
+                    <input type="file" id="pdfFile" accept=".pdf">
+                </div>
+                <img src="OIP-removebg-preview.png" alt="" class="up-img">
+                <button class="up-btn" onclick="convertPdfToWord()" id="up_btn" >
+                    <span id="upload-txt">
+                        Convert
+                    </span>
+                    <span id="done-txt">
+                        Done
+                    </span>
+                </button>
+                <a id="downloadLink" style="display: none;"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
